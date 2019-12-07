@@ -14,6 +14,10 @@
 		0C2F21B52387B2E100BB7B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2F21B32387B2E100BB7B35 /* Main.storyboard */; };
 		0C2F21B72387B2E400BB7B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C2F21B62387B2E400BB7B35 /* Assets.xcassets */; };
 		0C2F21BA2387B2E400BB7B35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2F21B82387B2E400BB7B35 /* LaunchScreen.storyboard */; };
+		0CAD1340239BED5000501692 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD133F239BED5000501692 /* AuthVC.swift */; };
+		0CAD1342239BED9700501692 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD1341239BED9700501692 /* LoginVC.swift */; };
+		0CAD1344239BEDE900501692 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD1343239BEDE900501692 /* InsetTextField.swift */; };
+		0CAD1346239BF1BC00501692 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAD1345239BF1BC00501692 /* ShadowView.swift */; };
 		0CB8DF55238C961E00883325 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CB8DF54238C961E00883325 /* GoogleService-Info.plist */; };
 		9F8F38D49736C51B353D91DE /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DECC3726844D899B9C234FB /* Pods_breakpoint.framework */; };
 /* End PBXBuildFile section */
@@ -29,6 +33,10 @@
 		0C2F21B62387B2E400BB7B35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C2F21B92387B2E400BB7B35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C2F21BB2387B2E400BB7B35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CAD133F239BED5000501692 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		0CAD1341239BED9700501692 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		0CAD1343239BEDE900501692 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		0CAD1345239BF1BC00501692 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		0CB8DF54238C961E00883325 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9DECC3726844D899B9C234FB /* Pods_breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BA748992513FA58896B596 /* Pods-breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.debug.xcconfig"; path = "Target Support Files/Pods-breakpoint/Pods-breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +104,8 @@
 			children = (
 				0C2F21AF2387B2E100BB7B35 /* FirstViewController.swift */,
 				0C2F21B12387B2E100BB7B35 /* SecondViewController.swift */,
+				0CAD133F239BED5000501692 /* AuthVC.swift */,
+				0CAD1341239BED9700501692 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -103,6 +113,8 @@
 		0C2F21C22387B34700BB7B35 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0CAD1343239BEDE900501692 /* InsetTextField.swift */,
+				0CAD1345239BF1BC00501692 /* ShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,9 +265,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CAD1340239BED5000501692 /* AuthVC.swift in Sources */,
 				0C2F21B22387B2E100BB7B35 /* SecondViewController.swift in Sources */,
+				0CAD1342239BED9700501692 /* LoginVC.swift in Sources */,
 				0C2F21AE2387B2E100BB7B35 /* AppDelegate.swift in Sources */,
+				0CAD1346239BF1BC00501692 /* ShadowView.swift in Sources */,
 				0C2F21B02387B2E100BB7B35 /* FirstViewController.swift in Sources */,
+				0CAD1344239BEDE900501692 /* InsetTextField.swift in Sources */,
 				0C27C85923993E600012D3BA /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
