@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C1F061D23A097B800B71E02 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1F061C23A097B800B71E02 /* MeVC.swift */; };
 		0C27C85923993E600012D3BA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C27C85823993E600012D3BA /* DataService.swift */; };
 		0C2F21AE2387B2E100BB7B35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2F21AD2387B2E100BB7B35 /* AppDelegate.swift */; };
 		0C2F21B02387B2E100BB7B35 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2F21AF2387B2E100BB7B35 /* FeedVC.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		078F95180FFCFF0D3E214278 /* Pods-breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.release.xcconfig"; path = "Target Support Files/Pods-breakpoint/Pods-breakpoint.release.xcconfig"; sourceTree = "<group>"; };
+		0C1F061C23A097B800B71E02 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		0C27C85823993E600012D3BA /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0C2F21AA2387B2E100BB7B35 /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C2F21AD2387B2E100BB7B35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				0C2F21B12387B2E100BB7B35 /* GroupsVC.swift */,
 				0CAD133F239BED5000501692 /* AuthVC.swift */,
 				0CAD1341239BED9700501692 /* LoginVC.swift */,
+				0C1F061C23A097B800B71E02 /* MeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1F061D23A097B800B71E02 /* MeVC.swift in Sources */,
 				0CAD1340239BED5000501692 /* AuthVC.swift in Sources */,
 				0C2F21B22387B2E100BB7B35 /* GroupsVC.swift in Sources */,
 				0CAD1342239BED9700501692 /* LoginVC.swift in Sources */,
