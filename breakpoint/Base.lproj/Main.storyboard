@@ -28,6 +28,9 @@
                                             <constraint firstAttribute="width" constant="40" id="eZR-nd-QAe"/>
                                         </constraints>
                                         <state key="normal" image="compose"/>
+                                        <connections>
+                                            <segue destination="mwP-bK-IqO" kind="presentation" id="oyq-zQ-XMd"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgq-RF-Nve">
                                         <rect key="frame" x="162" y="25" width="51.5" height="20"/>
@@ -77,6 +80,95 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+        </scene>
+        <!--Create PostVC-->
+        <scene sceneID="cRg-LG-bnk">
+            <objects>
+                <viewController id="mwP-bK-IqO" customClass="CreatePostVC" customModule="breakpoint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hYy-RL-KZV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kv8-iI-zu8">
+                                <rect key="frame" x="0.0" y="20" width="375" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_postsomething" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y08-Nh-1XB">
+                                        <rect key="frame" x="116" y="25" width="143.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69Q-VK-icL">
+                                        <rect key="frame" x="20" y="15" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="UBi-EC-Vqs"/>
+                                            <constraint firstAttribute="width" constant="40" id="ptQ-79-ose"/>
+                                        </constraints>
+                                        <state key="normal" image="close"/>
+                                        <connections>
+                                            <action selector="closeBtnWasPressed:" destination="mwP-bK-IqO" eventType="touchUpInside" id="fAx-PK-Bo0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="69Q-VK-icL" firstAttribute="leading" secondItem="kv8-iI-zu8" secondAttribute="leading" constant="20" id="2yd-cm-ldu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="EkB-AR-qNY"/>
+                                    <constraint firstItem="y08-Nh-1XB" firstAttribute="centerX" secondItem="kv8-iI-zu8" secondAttribute="centerX" id="MkG-n0-TUK"/>
+                                    <constraint firstAttribute="height" constant="70" id="OUP-zG-bxI"/>
+                                    <constraint firstItem="y08-Nh-1XB" firstAttribute="top" secondItem="kv8-iI-zu8" secondAttribute="top" constant="25" id="R6v-ta-6xv"/>
+                                    <constraint firstItem="69Q-VK-icL" firstAttribute="top" secondItem="kv8-iI-zu8" secondAttribute="top" constant="15" id="s73-6n-8FW"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hI-FY-jGU">
+                                <rect key="frame" x="16" y="98" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="user@breakpoint.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9C-QC-txx">
+                                <rect key="frame" x="84" y="118" width="275" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Say Something here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tgr-Ip-hiI">
+                                <rect key="frame" x="16" y="186" width="343" height="416"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zek-S4-xfh">
+                                <rect key="frame" x="0.0" y="610" width="375" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title=" SEND" image="send">
+                                    <color key="titleColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendBtnWasPressed:" destination="mwP-bK-IqO" eventType="touchUpInside" id="ccn-xF-0Rs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kv8-iI-zu8" firstAttribute="top" secondItem="2pb-gs-PkA" secondAttribute="top" id="Q87-vx-KDW"/>
+                            <constraint firstItem="kv8-iI-zu8" firstAttribute="trailing" secondItem="2pb-gs-PkA" secondAttribute="trailing" id="ahy-xe-HSf"/>
+                            <constraint firstItem="kv8-iI-zu8" firstAttribute="leading" secondItem="2pb-gs-PkA" secondAttribute="leading" id="fSI-Ci-gLM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2pb-gs-PkA"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailLbl" destination="i9C-QC-txx" id="lh8-iu-hSo"/>
+                        <outlet property="profileImage" destination="8hI-FY-jGU" id="BnP-ty-tjv"/>
+                        <outlet property="sendBtn" destination="Zek-S4-xfh" id="9gg-e6-apO"/>
+                        <outlet property="textView" destination="Tgr-Ip-hiI" id="6Za-QD-o3b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L60-iV-xOU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="-766.86656671664173"/>
         </scene>
         <!--Me-->
         <scene sceneID="Gxk-5e-on8">
@@ -461,6 +553,7 @@
         <image name="loginBGImage" width="375" height="284"/>
         <image name="logoutIcon" width="19" height="21"/>
         <image name="me-tabIcon" width="25" height="25"/>
+        <image name="send" width="29" height="29"/>
     </resources>
     <color key="tintColor" red="0.015686274509803921" green="0.6705882352941176" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
 </document>
