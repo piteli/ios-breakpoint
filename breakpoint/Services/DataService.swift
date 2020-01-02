@@ -107,4 +107,8 @@ class DataService {
         REF_GROUPS.childByAutoId().updateChildValues(["title" : title, "description" : description, "members" : ids])
         handler(true)
     }
+    
+    func getAllGroups(handler : @escaping (_ groupsArray: [Group]) -> ()){
+        
+    }
 }
