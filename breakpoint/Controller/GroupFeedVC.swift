@@ -16,6 +16,12 @@ class GroupFeedVC: UIViewController {
     @IBOutlet weak var sendBtnView: UIView!
     @IBOutlet weak var messageTextField: InsetTextField!
     @IBOutlet weak var sendBtn: UIButton!
+    
+    var group : Group?
+    
+    func initData(forGroup : Group){
+        self.group = group
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         sendBtnView.bindToKeyboard()
