@@ -18,6 +18,7 @@ class GroupFeedVC: UIViewController {
     @IBOutlet weak var sendBtn: UIButton!
     
     var group : Group?
+    var groupMessages = [Message]()
     
     func initData(forGroup group : Group){
         self.group = group
@@ -33,7 +34,12 @@ class GroupFeedVC: UIViewController {
         DataService.instance.getEmailsFor(group: group!) { (returnedEmails) in
             self.membersLbl.text = returnedEmails.joined(separator: ", ")
         }
-        membersLbl.text = group?.members.joined(separator: ", ")
+        DataService.instance.REF_GROUPS.observe(.value) { (snapshot) in
+            DataService.instance.getAllMessagesFor(desiredGroup: self.group!, handler: { (returnedGroupMessages) in
+                self.groupMessages = returnedGroupMessages
+                self.tableView.reloadData()
+            })
+        }
     }
 
     @IBAction func backBtnWasPressed(_ sender: Any) {
