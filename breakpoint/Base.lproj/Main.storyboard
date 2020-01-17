@@ -473,7 +473,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AeZ-uy-qAs">
-                                <rect key="frame" x="0.0" y="122.5" width="375" height="544.5"/>
+                                <rect key="frame" x="0.0" y="122.5" width="375" height="484.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupFeedCell" rowHeight="100" id="ll2-BF-78H" customClass="GroupFeedCell" customModule="breakpoint" customModuleProvider="target">
@@ -576,9 +576,9 @@
                             <constraint firstItem="lPc-QR-Cyb" firstAttribute="leading" secondItem="o8R-de-IkE" secondAttribute="leading" id="LBm-aj-CRe"/>
                             <constraint firstItem="lPc-QR-Cyb" firstAttribute="trailing" secondItem="o8R-de-IkE" secondAttribute="trailing" id="X3b-pm-XDo"/>
                             <constraint firstItem="lPc-QR-Cyb" firstAttribute="top" secondItem="o8R-de-IkE" secondAttribute="top" id="jL4-2C-voq"/>
-                            <constraint firstItem="AeZ-uy-qAs" firstAttribute="bottom" secondItem="o8R-de-IkE" secondAttribute="bottom" id="lZ0-dW-saS"/>
                             <constraint firstItem="1Vw-LU-FIc" firstAttribute="leading" secondItem="o8R-de-IkE" secondAttribute="leading" id="ntp-u9-rS5"/>
                             <constraint firstItem="AeZ-uy-qAs" firstAttribute="leading" secondItem="o8R-de-IkE" secondAttribute="leading" id="q1k-YH-7yB"/>
+                            <constraint firstItem="O1O-qF-pL6" firstAttribute="top" secondItem="AeZ-uy-qAs" secondAttribute="bottom" id="t5m-j2-reG"/>
                             <constraint firstItem="AeZ-uy-qAs" firstAttribute="trailing" secondItem="o8R-de-IkE" secondAttribute="trailing" id="vEP-D7-t9T"/>
                             <constraint firstItem="O1O-qF-pL6" firstAttribute="leading" secondItem="o8R-de-IkE" secondAttribute="leading" id="xyY-Rk-fOX"/>
                             <constraint firstItem="O1O-qF-pL6" firstAttribute="bottom" secondItem="o8R-de-IkE" secondAttribute="bottom" id="zTt-Nf-4b9"/>
