@@ -49,6 +49,7 @@ class GroupFeedVC: UIViewController {
     }
 
     @IBAction func backBtnWasPressed(_ sender: Any) {
+        dismissDetail()
         dismiss(animated: true, completion: nil)
     }
     @IBAction func sendBtnWasPressed(_ sender: Any) {
@@ -82,6 +83,7 @@ extension GroupFeedVC : UITableViewDelegate, UITableViewDataSource{
         DataService.instance.getUsername(forUID: message.senderId) { (email) in
             cell.configureCell(profileImage: UIImage(named : "defaultProfileImage")!, email: email, content: message.content)
         }
+        return cell
     }
-    return cell
+    
 }
